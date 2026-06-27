@@ -1,0 +1,2 @@
+#i!/bin/bash
+/usr/sbin/update-blacklist.sh /etc/ipset-blacklist/ipset-blacklist.conf
