@@ -20,7 +20,7 @@ A Bash shell script which uses ipset and iptables to ban a large number of IP ad
 
 %changelog
 * Fri Jun 26 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.0-1.sme
-- initial release for SME 11 [SME: ]
+- initial release for SME 11 [SME: 13628]
   thanks to Stefano Zamboni for that work
 
 
