@@ -13,16 +13,18 @@ $event = 'smeserver-ipset-update';
 
 foreach my $file (qw(
         /etc/systemd/system-preset/49-koozali.preset
+        /etc/ipset-blacklist/ipset-blacklist.conf
+	/etc/crontab
 ))
 {
     templates2events( $file, $event );
 };
 #action needed in case we have a systemd unit
-event_link('systemd-default', $event, '10');
-event_link('systemd-reload', $event, '50');
+event_link('/usr/sbin/update-blacklist.sh', $event, '91');
+
 
 #services we might need to restart
-#event_services($event, 'xxxx' => 'restart', 'yyyy' => 'restart');
+event_services($event, 'masq' => 'restart');
 
 #Backup contrib files
 # backup_includes("smeserver-ipset", qw(

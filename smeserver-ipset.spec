@@ -19,8 +19,10 @@ AutoReqProv: no
 A Bash shell script which uses ipset and iptables to ban a large number of IP addresses published in IP blacklists. ipset uses a hashtable to store/fetch IP addresses and thus the IP lookup is a lot (!) faster than thousands of sequentially parsed iptables ban rules.
 
 %changelog
-* Day MMMM DD YYYY <brianr@koozali.org> 1.0-1.sme
-- Initial code - create RPM [SME:99999]
+* Fri Jun 26 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.0-1.sme
+- initial release for SME 11 [SME: ]
+  thanks to Stefano Zamboni for that work
+
 
 %prep
 

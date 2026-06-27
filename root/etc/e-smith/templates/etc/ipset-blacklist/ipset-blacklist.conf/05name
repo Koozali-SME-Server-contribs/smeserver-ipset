@@ -1,0 +1,1 @@
+IPSET_BLACKLIST_NAME=blacklist # change it if it collides with a pre-existing ipset list

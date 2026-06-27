@@ -1,0 +1,3 @@
+FORCE=yes # will create the ipset-iptable binding if it does not already exist
+let IPTABLES_IPSET_RULE_NUMBER=1 # if FORCE is yes, the number at which place insert the ipset-match rule (default to 1)
+

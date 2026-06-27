@@ -1,0 +1,1 @@
+VERBOSE=yes # probably set to "no" for cron jobs, default to yes

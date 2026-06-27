@@ -1,0 +1,48 @@
+# Sample (!) list of URLs for IP blacklists. Currently, only IPv4 is supported in this script, everything else will be filtered.
+BLACKLISTS=(
+    # "file:///etc/ipset-blacklist/ip-blacklist-custom.list" # optional, for your personal nemeses (no typo, plural)
+
+    # Project Honey Pot Directory of Dictionary Attacker IPs
+    "https://www.projecthoneypot.org/list_of_ips.php?t=d&rss=1"
+
+    # TOR Exit Nodes
+    "https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=1.1.1.1"  # TOR Exit Nodes
+
+    # BruteForceBlocker IP List
+    "http://danger.rulez.sk/projects/bruteforceblocker/blist.php"
+
+    # Spamhaus DROP List (IPv4) - Don't Route Or Peer
+    #"https://www.spamhaus.org/drop/drop_v4.json"
+
+    # Spamhaus Don't Route Or Peer List (DROP)
+    "https://www.spamhaus.org/drop/drop.lasso"
+
+    # C.I. Army Malicious IP List
+    "https://cinsscore.com/list/ci-badguys.txt"
+
+    # blocklist.de - All attackers
+    "https://lists.blocklist.de/lists/all.txt"
+
+    # GreenSnow Blocklist
+    "https://blocklist.greensnow.co/greensnow.txt" # GreenSnow
+ 
+    # FireHOL Level 1 (aggregated: dshield, feodo, fullbogons, spamhaus_drop)
+    # Use iplists.firehol.org direct - GitHub sync is broken, see firehol/blocklist-ipsets#366
+    "https://iplists.firehol.org/files/firehol_level1.netset"
+    #"https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset" # Firehol Level 1
+
+    # Stopforumspam via Firehol (7 days)
+    "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_7d.ipset" 
+ 
+    # Emerging Threats - Compromised hosts
+    "https://rules.emergingthreats.net/blockrules/compromised-ips.txt"
+
+    # "https://raw.githubusercontent.com/ipverse/rir-ip/master/country/zz/ipv4-aggregated.txt" # Ban an entire country(-code), see https://github.com/ipverse/rir-ip
+    # "https://raw.githubusercontent.com/ipverse/asn-ip/master/as/1234/ipv4-aggregated.txt" # Ban a specific autonomous system (ISP), see https://github.com/ipverse/asn-ip 
+
+    # Country/ASN blocks (uncomment and edit as needed)
+    # Use https://lens.ipverse.net to look up ASN and network info
+    # "https://raw.githubusercontent.com/ipverse/country-ip-blocks/master/country/ru/ipv4-aggregated.txt"
+    # "https://raw.githubusercontent.com/ipverse/country-ip-blocks/master/country/ru/ipv6-aggregated.txt"
+    # "https://raw.githubusercontent.com/ipverse/as-ip-blocks/master/as/64496/ipv4-aggregated.txt"
+    # "https://raw.githubusercontent.com/ipverse/as-ip-blocks/master/as/64496/ipv6-aggregated.txt"
