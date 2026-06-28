@@ -20,7 +20,7 @@ foreach my $file (qw(
     templates2events( $file, $event );
 };
 #action needed in case we have a systemd unit
-event_link("ipset-bl", $event, "91");
+event_link("ipset-bl", $event, "70");
 
 #services we might need to restart
 event_services($event, 'masq' => 'restart');
