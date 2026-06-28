@@ -1,6 +1,6 @@
 %define name smeserver-ipset
 %define version 1.0
-%define release 2
+%define release 3
 Summary: This is what smeserver-ipset does.
 Name: %{name}
 Version: %{version}
@@ -20,8 +20,9 @@ AutoReqProv: no
 A Bash shell script which uses ipset and iptables to ban a large number of IP addresses published in IP blacklists. ipset uses a hashtable to store/fetch IP addresses and thus the IP lookup is a lot (!) faster than thousands of sequentially parsed iptables ban rules.
 
 %changelog
-* Sun Jun 28 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.0-2.sme
+* Sun Jun 28 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.0-3.sme
 - add ipset requirement, reorder event, release requirement
+- expand masq template
 
 * Fri Jun 26 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.0-1.sme
 - initial release for SME 11 [SME: 13628]
