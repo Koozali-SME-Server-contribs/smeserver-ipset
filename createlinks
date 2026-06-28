@@ -13,6 +13,7 @@ $event = 'smeserver-ipset-update';
 
 foreach my $file (qw(
         /etc/systemd/system-preset/49-koozali.preset
+        /etc/rc.d/init.d/masq
         /etc/ipset-blacklist/ipset-blacklist.conf
 	/etc/crontab
 ))
