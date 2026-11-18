@@ -1,2 +1,6 @@
-#i!/bin/bash
+#!/bin/bash
+modprobe xt_set
+modprobe ip_set_hash_net
+
 /usr/sbin/update-blacklist.sh /etc/ipset-blacklist/ipset-blacklist.conf
+
