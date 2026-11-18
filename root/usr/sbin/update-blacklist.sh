@@ -32,7 +32,7 @@ if [[ ! -d $(dirname "$IP_BLACKLIST") || ! -d $(dirname "$IP_BLACKLIST_RESTORE")
 fi
 
 # create the ipset if needed (or abort if does not exists and FORCE=no)
-if ! ipset list -n|command grep -q "$IPSET_BLACKLIST_NAME"; then
+if ! ipset list -n|command grep -qx "$IPSET_BLACKLIST_NAME"; then
   if [[ ${FORCE:-no} != yes ]]; then
     echo >&2 "Error: ipset does not exist yet, add it using:"
     echo >&2 "# ipset create $IPSET_BLACKLIST_NAME -exist hash:net family inet hashsize ${HASHSIZE:-16384} maxelem ${MAXELEM:-65536}"
