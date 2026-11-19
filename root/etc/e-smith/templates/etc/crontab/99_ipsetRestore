@@ -1,1 +1,1 @@
-@reboot /usr/sbin/ipset restore < /etc/ipset-blacklist/ip-blacklist.restore
+@reboot root /usr/sbin/ipset restore < /etc/ipset-blacklist/ip-blacklist.restore
